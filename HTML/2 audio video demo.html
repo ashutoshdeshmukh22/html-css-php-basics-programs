@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Video Demo</title>
+</head>
+
+<body>
+    <audio id="aud" controls>
+        <source src="Pirates of the Caribbean Remix.mp3" type="audio/mp3">
+    </audio>
+
+    <button onclick="volume()" type="button">
+        Return Volume
+    </button>
+
+    <button onclick="Set_vol1()" type="button">
+        Set HalfVolume
+    </button>
+
+    <button onclick="Set_vol2()" type="button">
+        Set Fullvolume
+    </button><br>
+
+    <script>
+        var audio = document.getElementById("aud");
+
+        function volume() {
+            alert(audio.volume);
+        }
+
+        function Set_vol1() {
+            audio.volume = 0.3;
+        }
+
+        function Set_vol2() {
+            audio.volume = 1.0;
+        } 
+    </script>
+</body>
+
+</html>

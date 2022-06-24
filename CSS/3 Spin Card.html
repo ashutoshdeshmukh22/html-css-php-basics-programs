@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin Card</title>
+
+    <style>
+        .rotate {
+            animation: rotation 1s infinite linear;
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotateY(180deg)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img class="rotate"
+        src="https://cdn.imgbin.com/21/11/22/imgbin-playing-card-ace-of-hearts-one-card-suit-heart-playing-cards-ace-of-heart-playing-cad-x5EwQyaQV5h2zD9vSyjuenxbZ.jpg"
+        alt="" width="300" height="500">
+</body>
+
+</html>
