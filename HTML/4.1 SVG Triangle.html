@@ -21,6 +21,28 @@
             <polygon points="50 15, 100 100, 0 100" />
         </svg>
     </div>
+    <canvas id="canvas" width="500" height="500" </canvas>
+        <script>
+            var canvas = document.getElementById('canvas');
+            var context = canvas.getContext('2d');
+            var putPoint = function (e) {
+                let height = 200 * Math.cos(Math.PI / 6);
+                context.beginPath();
+                context.moveTo(100, 300); //vertical
+                context.lineTo(300, 300); //horizontal
+                context.lineTo(200, 300 - height);
+                context.closePath();
+                //outline
+                context.lineWidth = 5;
+                context.strokeStyle = 'black';
+                context.stroke();
+                //fillColor
+                context.fillStyle = "pink";
+                context.fill();
+            }
+            putPoint();
+        </script>
+
 </body>
 
 </html>
